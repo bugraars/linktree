@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #18181b;
+    --txt: #ffffff;
+    --txt-opt: #a1a1aa;
+    --div-bg: #222222;
+    --border: #303030;
+    --twitter: #1DA1F2;
+    --linkedin: #0072b1;
+    --youtube: #FF0000;
+    --gradient:
+        linear-gradient(45deg,
+            #f09433 0%, #e6683c 25%,
+            #dc2743 50%, #6902be 75%,
+            #bc1888 100%);
+}
+
+body {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: var(--bg);
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-container {
+    border-bottom: 3px solid var(--border);
+    height: 192px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./image/pexels-aleksandar-pasaric-2303337.jpg);
+}
+
+.pp-container {
+    position: relative;
+    height: 96px;
+}
+
+.pp {
+    /* profile-picture */
+    width: 192px;
+    height: 192px;
+    position: absolute;
+    padding: 5px;
+    top: -96px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: var(--gradient);
+}
+
+.title {
+    margin-top: .5rem;
+    text-shadow: red -1px 0,
+        cyan 1px 0;
+}
+
+/* Navbar-Title */
+nav h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+    color: var(--txt);
+}
+
+/* Main */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    min-width: 50%;
+}
+
+main ul li {
+    text-align: center;
+    border-radius: 4px;
+    padding: .45rem;
+    margin-top: .5rem;
+    color: var(--txt);
+    border: 2px solid var(--border);
+}
+
+main ul li:hover {
+    background-color: var(--div-bg);
+}
+
+main ul li h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    margin-top: 1rem;
+    padding: .25rem;
+    /* background-color: #6902be; */
+}
+footer p{
+    text-align: center;
+    margin-top: .25rem;
+    color: var(--txt);
+
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: .25rem;
+    font-size: x-large;
+    width: 42px;
+    height: 42px;
+    border-radius: 4px;
+}
+
+footer ul li:hover {
+    opacity: 0.7;
+}
+footer ul li a {
+    text-align: center;
+}
+
+footer ul li:nth-child(1) {
+    background: var(--youtube);
+}
+
+footer ul li:nth-child(2) {
+    background: var(--linkedin);
+}
+
+footer ul li:nth-child(3) {
+    background: var(--gradient);
+}
+
+footer ul li:nth-child(4) {
+    background: var(--twitter);
+}
+
+footer ul li:nth-child(5) {
+    background-color: var(--txt);
+}
+
+footer ul li:nth-child(5) i {
+    color: var(--bg);
+}
+
+.disable {
+    display: none;
+}
